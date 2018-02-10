@@ -3,6 +3,7 @@
 .bash_profile
 .bashrc
 .gitconfig
+.ssh/
 bin/
 .cache/
 include/
