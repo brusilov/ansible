@@ -1,0 +1,13 @@
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.gitconfig
+bin/
+.cache/
+include/
+lib/
+lib64
+pip-selfcheck.json
+pyvenv.cfg
+*.retry
