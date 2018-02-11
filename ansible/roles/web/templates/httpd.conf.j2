@@ -1,5 +1,5 @@
 ServerRoot "/etc/httpd"
-Listen 0.0.0.0:{{ apache_port | default('80') }}
+Listen {{ bind_address }}:{{ apache_port | default('80') }}
 Include conf.modules.d/*.conf
 User {{apache_user}}
 Group {{apache_group}}
