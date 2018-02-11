@@ -1,0 +1,6 @@
+---
+- name: Configure web
+  hosts: srv03g
+  become: true
+  roles:
+    - web

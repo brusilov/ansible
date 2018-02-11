@@ -1,0 +1,7 @@
+---
+# defaults file for web
+
+apache_port: 81
+apache_user: apache
+apache_group: apache
+apache_domain: centos03.lab.local

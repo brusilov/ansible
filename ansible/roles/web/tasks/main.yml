@@ -1,0 +1,16 @@
+---
+# tasks file for web
+
+- name: ensure apache latest ver
+  yum: name=httpd state=latest
+- name: Change apache config file
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf
+    mode: 0644
+    #owner: apache
+    #group: apache
+  tags: web-tag
+  notify: restart apache
+- name: enable apache
+  systemd: name=httpd state=started enabled=yes
